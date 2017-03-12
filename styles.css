@@ -1,0 +1,299 @@
+
+body {
+  margin: 0;
+}
+
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #66cc99;
+  color: #fff;
+}
+
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+
+
+.fa linkedin-square,.fa twitter-square{
+  width:105px;
+    
+}
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:1rem;
+}
+
+.header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .header .material-icons {
+    color: #767777;
+  }
+
+  .header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .navigation-container {
+    /* make the overflow happen to the left */
+    direction: rtl;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .navigation {
+    /*make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+  }
+
+
+  .navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent;
+    border-bottom: 4px solid transparent;
+  }
+
+    .navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #76D0A6;
+    }
+
+
+.drawer {
+  border-right: none;
+}
+
+  .drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+  }
+
+/*Intro Section*/
+
+.headline-section {
+  position: relative;
+  height:auto;
+  width: auto;
+  background-color: #76D0A6;
+    /*background: url('img/computer.jpg')  no-repeat;*/ 
+  background-size: cover;
+  padding:15%;
+}
+
+.headline-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+.slogan {
+  font-size: 60px;
+}
+
+.sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+/*Work Section*/
+
+.contact-section{
+  position: relative;
+  height: 300px;
+  width: auto;
+  background-color: #76D0A6;
+    /*background: url('img/computer.jpg')  no-repeat;*/ 
+  background-size: cover;
+}
+.contact-font, p {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+  padding-top: 1em;
+  width:75%;
+}
+
+
+.contact-image{
+  position: relative;
+  height:50%;
+  float:left;
+  padding:1em;
+}
+
+.link {
+  text-decoration: none;
+  color: #3366cc;
+}
+
+  .link:hover {
+    color: #7cb342;
+  }
+
+  .link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+.alt-link {
+  text-decoration: none;
+  color: #64ffda;
+  font-size: 16px;
+}
+
+  .alt-link:hover {
+    color: #00bfa5;
+  }
+
+  .alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.work-section .contact-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+    margin-left: 12px;
+    padding-top:24px;
+    padding-bottom: 24px;
+  }
+
+
+  .card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+.mdl-card__media img{
+      max-width:90%;
+      padding:1em;
+    }
+
+  .card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+
+
+
+
+.link-menu:hover {
+  cursor: pointer;
+}
+
+footer a{
+  color: #757575;
+}
+
+/**** Mobile layout ****
+@media (max-width: 900px) {
+  .navigation-container {
+    display: none;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .mobile-title {
+    display: block;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+ 
+
+  .slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+
+.mdl-cell .mdl-card{
+    width:100%;
+}
+.contact-section {
+  position: relative;
+  height: 200px;
+}
