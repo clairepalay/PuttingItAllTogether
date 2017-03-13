@@ -14,54 +14,47 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
      <!--font awesome: for social media icons-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
  </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <div class="header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
             <div class="mdl-layout__header-row">
             <!-- Title -->
             <span class="mdl-layout-title">Claire Palay</span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="header-spacer mdl-layout-spacer"></div>
-          <div class="mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield-- align-right mdl-textfield--full-width">
-         <div class="mdl-textfield__expandable-holder">
-            </div>
-          </div>
-          <!-- Navigation -->
-          <div class="navigation-container">
-            <nav class="navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#home">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#contact">Contact</a>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="#home">Home</a>
+                <a class="mdl-navigation__link" href="#contact">Contact</a>
             </nav>
-          </div>
-          <span class="mobile-title mdl-layout-title">Claire Palay</span>
-        </div>
-      </div>
-      <div class="drawer mdl-layout__drawer">
+            </div>
+        </header>
+      <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Claire Palay</span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#home">Home</a>
-          <a class="mdl-navigation__link" href="#contact">Contact</a>
-        </nav>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="#home">Home</a>
+              <a class="mdl-navigation__link" href="#contact">Contact</a>
+            </nav>
       </div>
       <!--Intro Section-->
       <div class="content mdl-layout__content">
-        <a name="home"></a>
-        <div class="headline-section mdl-typography--text-center">
-          <div class="headline-font slogan">Information Managed</div>
-          <div class="headline-font sub-slogan">Information Architecture, Data Analysis, User Experience .</div>
-          </a>
-        </div>
+         <a id="home"></a>
+          <div class="headline-section mdl-typography--text-center">
+            <div class="headline-font slogan">Put It All Together</div>
+            <div class="headline-font sub-slogan">Information Architecture, Data Analysis, User Experience</div>
+          </div>
         <!--Portfolio Section-->
         <div class="work-section">
-          <div class="section-title mdl-typography--display-1-color-contrast">My Work</div>  
-          <div class="card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="img/OKNaviUserFlow.png" alt="user flow chart">
-              </div>
+          <div class="section-title mdl-typography--display-1">My Work</div>  
+            <div class="card-container mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                  <img src="img/OKNaviUserFlow.png" alt="user flow chart">
+                </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Taxonomy in Action</h4>
               </div>
@@ -80,10 +73,10 @@
                 <img src="img/village.png" alt="housing charts">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Making Seattle Affordable</h4>
+                 <h4 class="mdl-card__title-text">Housing Affordability</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Visualizing progress towards affordable housing in Seattle</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">Tracking Seattle's progress toward becoming a more affordable city</span>
               </div>
               <div class="mdl-card__actions">
                  <a class="link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -93,14 +86,11 @@
               </div>
             </div>
             <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
-                    <div class="mdl-card">
                         <div class="mdl-card__media">
-                            <img src="img/wireframes.png" alt="app wireframes">
-                        </div>
-                         <div class="mdl-card__title">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">User Centered Design</h4>
+                            <img src="img/wf-01.png" alt="app wireframes">
+                            </div>
+                        <div class="mdl-card__title">
+                       <h4 class="mdl-card__title-text">User Centered Design</h4>
               </div>
               <div class="mdl-card__supporting-text">
                 <span class="mdl-typography--font-light mdl-typography--subhead">Escape the conference hotel with Itinerist - a travel app designed to help business travelers take advantage of every trip</span>
@@ -112,36 +102,32 @@
                  </a>
               </div>
             </div>
-          </div>
         </div>
     </div>
     <!--About Me Section-->
         <div class="contact-section">
-          <a name="contact"></a>
-            <div class="section-title mdl-typography--display-1-color-contrast">About Me</div>
-            <img class="contact-image" src="img/profile.jpg">
+          <a id="contact"></a>
+            <div class="section-title mdl-typography--display-1">About Me</div>
             <div class="contact-font sub-slogan">Hello there!</div>
-            <p class="contact-text">My name is Claire and I'm a second year Masters of Information Management student at the University of Washington in Seattle, WA. I'm always looking for new projects and collaborators.</p>
-                <p> Say hey at cpalay@uw.edu | (206)-714-2606</p>
-    
-        <footer class= "social mdl_link-list">
-                    <a href="https://www.linkedin.com/in/claire-palay-142633102/"
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <p class="contact-text">My name is Claire and I'm a second year Masters of Information Management student at the University of Washington in Seattle, WA. I'm always looking for new projects and collaborators.</p>
+                <p> Say hey at <a href="mailto:cpalay@uw.edu">cpalay@uw.edu</a> | (206)-714-2606</p>
+          <div class="social-media"> 
+            <a href="https://www.linkedin.com/in/claire-palay-142633102/">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
-                    <a href="https://twitter.com/claire_palay/">
-                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <a href="https://facebook.com/clairepalay">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
                     </a>
-        </div>
-        </div>
-    <!--FOOTER FOOTER FOOTER-->
-
-
-                    </div>
-                <p>&copy; Claire Palay 2017</p>
-            </div>
-        </footer>
+                    <a href="https://www.instagram.com/clairepalay/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+              </div>
+          </div>
+    <!--Footer-->
+    <footer style="text-align:left;">
+        <p>&copy; Claire Palay 2017</p>
+      </footer>
       </div>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
